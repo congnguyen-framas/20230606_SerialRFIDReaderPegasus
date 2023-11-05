@@ -31,7 +31,7 @@ namespace AnserU2_cSharp
         {
             this._ccbComPort = new System.Windows.Forms.ComboBox();
             this.btn_connect = new System.Windows.Forms.Button();
-            this.labStatus = new System.Windows.Forms.Label();
+            this._labEmpId = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -64,17 +64,17 @@ namespace AnserU2_cSharp
             this.btn_connect.UseVisualStyleBackColor = true;
             this.btn_connect.Click += new System.EventHandler(this.btn_connect_Click);
             // 
-            // labStatus
+            // _labEmpId
             // 
-            this.labStatus.Cursor = System.Windows.Forms.Cursors.Default;
-            this.labStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labStatus.Location = new System.Drawing.Point(13, 84);
-            this.labStatus.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labStatus.Name = "labStatus";
-            this.labStatus.Size = new System.Drawing.Size(776, 400);
-            this.labStatus.TabIndex = 28;
-            this.labStatus.Text = "Status:";
-            this.labStatus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this._labEmpId.Cursor = System.Windows.Forms.Cursors.Default;
+            this._labEmpId.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._labEmpId.Location = new System.Drawing.Point(13, 84);
+            this._labEmpId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this._labEmpId.Name = "_labEmpId";
+            this._labEmpId.Size = new System.Drawing.Size(776, 84);
+            this._labEmpId.TabIndex = 28;
+            this._labEmpId.Text = "Status:";
+            this._labEmpId.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label1
             // 
@@ -91,7 +91,7 @@ namespace AnserU2_cSharp
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 518);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.labStatus);
+            this.Controls.Add(this._labEmpId);
             this.Controls.Add(this._ccbComPort);
             this.Controls.Add(this.btn_connect);
             this.Name = "Form1";
@@ -104,7 +104,7 @@ namespace AnserU2_cSharp
         #endregion
         internal System.Windows.Forms.ComboBox _ccbComPort;
         internal System.Windows.Forms.Button btn_connect;
-        internal System.Windows.Forms.Label labStatus;
+        internal System.Windows.Forms.Label _labEmpId;
         private System.Windows.Forms.Label label1;
     }
 }
